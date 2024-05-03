@@ -1,0 +1,106 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+      background-position: center;
+    background-size: cover;
+    background-image: url(https://plus.unsplash.com/premium_photo-1669997804140-ecc75729b583?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHx8);
+  
+}
+#calculater{
+    height: 80%;
+    width: 35%;
+    background: transparent;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+}
+#calculater #text{
+    height: 20%;
+    width: 100%;
+    
+    padding: 2vw 2.5vw;
+}
+#text input{
+    border-radius: 2vw;
+    height: 100%;
+    width: 100%;
+    border: 3px solid black;
+    font-size: 2.5vw;
+}
+#calculater #btn{
+    width: 100%;
+    height: calc(100% - 20%);
+padding: 1.5vw  2vw;
+}
+#btn #f{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+   
+}
+#f button{
+    cursor: pointer;
+    margin: 1vw;
+    height: 7vh;
+    width: 4vw;
+    border: 1.5px solid black;
+    border-radius: 10px;
+    font-size: 2vw;
+transition: all ease 0.3s;
+}
+button:hover{
+    box-shadow: 0.5vw 0.7vw 1vw black;
+}
+button sup{
+    font-size: 1vw;
+    
+}
+button#last{
+    background-color: red;
+    width: 6vw;
+    margin-left: 0vw;
+}
+@media (max-width:600px) {
+
+    
+    #calculater{
+        height: 60%;
+        width: 80%;
+      backdrop-filter: blur(6px);
+    }
+
+    #calculater #text{
+        height: 20%;
+
+    }
+    #text input{
+         font-size: 8vw;
+         font-weight: 600;
+    }
+    #f button{
+        height: 8vh;
+        width: 12vw;
+        font-size: 4vw;
+        font-weight: 600;
+    }
+    button sup{
+        font-size: 2.5vw;
+        
+    }
+    button#last{
+        background-color: red;
+        width: 16vw;
+        margin-left: -1.5vw;
+    }
+}
